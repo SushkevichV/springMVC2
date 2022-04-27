@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello</title>
+</head>
+<body>
+Hello!
+<p>type "/hello-world" or "/home" or "/hello" or "/goodbye"</p>
+<p>or type "/request?name=V&surname=S" or "/request2?name=V&surname=S" (typing to console)</p>
+<p><a href="/goodbye">Say goodbye</a></p>
+<a href="/request?name=Vladislav&surname=Sushkevich">request with parameters (typing to console)</a>
+<br>
+<a href="/dynamic?name=Vladislav&surname=Sushkevich">request with parameters (typing to view)</a>
+<br>
+<a href="/calc?a=2&b=3&action=mult">Calculator (typing to view)</a>
+<p th:text="${message}"/>
+</body>
+</html>
